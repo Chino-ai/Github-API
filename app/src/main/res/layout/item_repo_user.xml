@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="16dp"
+        android:textColor="@color/black"
+        tools:text="@string/username" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="30dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:layout_below="@id/tv_username"
+        tools:text="@string/name" />
+
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_star_border"
+        android:layout_below="@id/description"
+         />
+
+    <TextView
+        android:id="@+id/starNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:layout_below="@id/description"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/star"
+        android:textSize="10px"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <View
+        style="@style/Divider"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+
+</RelativeLayout>
